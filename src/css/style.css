@@ -1,16 +1,28 @@
-body {
-    color: #999;
+.bd-example {
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.cell {
-    width: 120px;
-    height: 120px;
-    border: 2px solid black;
-    margin: 5px;
-  }
 
-  .game-field {
-    display:flex;
-    align-items: stretch;
-  justify-content: center;
-  }
+.btn-lg {
+      padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+#popover {
+  position: absolute;
+}
+
+.hidden {
+  display: none;
+}
