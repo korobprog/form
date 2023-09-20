@@ -55,10 +55,10 @@
   left: 50%;
   margin-left: -8px;
   border-width: 8px;
+ 
   border-style: solid;
-  border-radius: 1px;
   border-color: #ffffff;
-  border-color: rgb(215, 199, 199) transparent transparent transparent;
+  border-color: rgb(241, 235, 235) transparent transparent transparent;
 }
 .tooltip.active .tooltiptext {
   visibility: visible;
