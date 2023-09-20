@@ -1,9 +1,14 @@
 import './css/style.css';
 import './js/app';
 
-const btn = document.getElementById('btn');
-const popover = document.getElementById('popover');
+const tooltip = document.querySelector('.tooltip');
 
-btn.addEventListener('click', () => {
-  popover.classList.toggle('hidden');
+tooltip.addEventListener('click', function () {
+  if (this.classList.contains('active')) {
+    this.classList.remove('active');
+  } else {
+    this.classList.add('active');
+  }
+
 });
+

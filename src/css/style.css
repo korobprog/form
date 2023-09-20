@@ -1,28 +1,90 @@
 .bd-example {
- position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-
 .btn-lg {
-      padding: .5rem 1rem;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    border-radius: .3rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
 }
 
 .btn-danger {
-    color: #fff;
-    background-color: #dc3545;
-    border-color: #dc3545;
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn:hover .tooltip {
+  visibility: visible;
 }
 
 #popover {
   position: absolute;
 }
 
-.hidden {
-  display: none;
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: rgb(250, 250, 250);
+  color: #050000;
+  text-align: center;
+  box-shadow: 0 0 1px 0;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  left: 10%;
+  margin-left: -60px;
+  text-align: left;
+  padding: 0px 0px 6px 5px;
+}
+
+.tooltip .tooltiptext::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  border-width: 8px;
+  border-style: solid;
+  border-radius: 1px;
+  border-color: #ffffff;
+  border-color: rgb(215, 199, 199) transparent transparent transparent;
+}
+.tooltip.active .tooltiptext {
+  visibility: visible;
+}
+
+.hide {
+  visibility: hidden !important;
+}
+
+.tooltip .tooltiptext-title {
+  visibility: hidden;
+  width: 300px;
+  background-color: #f7f7f7;
+  color: #050000;
+  text-align: center;
+  box-shadow: 0 0 1px 0;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 206%;
+  left: 10%;
+  margin-left: -60px;
+  text-align: left;
+  padding: 0px 0px 6px 5px;
+}
+
+.tooltip.active .tooltiptext-title {
+  visibility: visible;
 }
